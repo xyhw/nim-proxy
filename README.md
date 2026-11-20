@@ -18,6 +18,17 @@ One job: obey the NIM speed limit so your client never sees it.
 
 </div>
 
+<div align="center">
+
+> **中文定制分支** — 本 fork 在上游 [miztertea/nim-proxy](https://github.com/miztertea/nim-proxy) v0.6.6 基础上增加了：
+> - 🇨🇳 简体中文界面（449 条消息全量翻译，通过上游 locale-v1 校验器）
+> - 🕐 历史数据默认保留 7 天（上游默认 30 天）
+>
+> 其余功能（dashboard、settings、governor、多用户、流式透传）与上游一致。
+> 追踪上游更新：`git fetch origin && git rebase origin/main`
+
+</div>
+
 ---
 
 NIM's free tier has no credits and no token caps — just a ~40 requests-per-minute limit per API key. When a client (OpenCode, Codex, n8n, or anything else that speaks the OpenAI API) hits that limit, the upstream returns a 429 and most clients simply abort the task. nim-proxy sits in between and makes the limit invisible:
