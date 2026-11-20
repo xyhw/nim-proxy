@@ -249,7 +249,7 @@ fn default_max_inflight() -> usize {
     512
 }
 fn default_history_days() -> u64 {
-    30
+    7
 }
 fn default_dashboard_window_days() -> u64 {
     30
